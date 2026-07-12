@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#dfc06a"/>
+    </linearGradient>
+  </defs>
+  <!-- Building icon -->
+  <rect x="10" y="18" width="10" height="30" rx="1" fill="#c9a84c" opacity="0.3"/>
+  <rect x="24" y="8" width="10" height="40" rx="1" fill="#c9a84c"/>
+  <rect x="38" y="14" width="10" height="34" rx="1" fill="#c9a84c" opacity="0.5"/>
+  <!-- Star -->
+  <polygon points="24,2 26.5,9 34,9 28,13.5 30,21 24,16 18,21 20,13.5 14,9 21.5,9" fill="url(#lg)"/>
+  <!-- Company name -->
+  <text x="60" y="30" font-family="'Noto Serif SC','SimSun','STSong',serif" font-size="16" font-weight="700" fill="#0a1628">星小球信息科技</text>
+  <text x="60" y="46" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif" font-size="9" fill="#666">XINGXIAOQIU INFORMATION TECHNOLOGY</text>
+</svg>
