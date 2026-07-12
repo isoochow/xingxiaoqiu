@@ -6,13 +6,10 @@
       <stop offset="100%" stop-color="#dfc06a"/>
     </linearGradient>
   </defs>
-  <!-- Building icon -->
   <rect x="10" y="18" width="10" height="30" rx="1" fill="#c9a84c" opacity="0.3"/>
   <rect x="24" y="8" width="10" height="40" rx="1" fill="#c9a84c"/>
   <rect x="38" y="14" width="10" height="34" rx="1" fill="#c9a84c" opacity="0.5"/>
-  <!-- Star -->
   <polygon points="24,2 26.5,9 34,9 28,13.5 30,21 24,16 18,21 20,13.5 14,9 21.5,9" fill="url(#lg)"/>
-  <!-- Company name -->
-  <text x="60" y="30" font-family="'Noto Serif SC','SimSun','STSong',serif" font-size="16" font-weight="700" fill="#f0ede8">星小球信息科技</text>
-  <text x="60" y="46" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif" font-size="9" fill="rgba(240,237,232,0.5)">STARCHOO INFORMATION TECHNOLOGY</text>
+  <text x="56" y="30" font-family="'Noto Serif SC','SimSun','STSong',serif" font-size="17" font-weight="700" fill="#f0ede8">星小球信息科技</text>
+  <text x="56" y="46" font-family="'Noto Sans SC','Arial',sans-serif" font-size="9" fill="rgba(240,237,232,0.5)" letter-spacing="0.5">STARCHOO INFORMATION TECHNOLOGY</text>
 </svg>
