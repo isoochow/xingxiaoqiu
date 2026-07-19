@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="苏州星小球信息科技有限公司 - 专业建筑资质咨询服务机构，提供资质新办、升级、延续、维护全周期服务。">
-<meta name="keywords" content="建筑资质咨询,苏州建筑资质,资质新办,资质升级,安全生产许可">
+<meta name="description" content="苏州星小球信息科技有限公司 - 星球证书管理系统 V3.0 官方下载与建筑资质咨询服务，提供证书管理、人员管理、费用统计、需求管理和资质申报服务。">
+<meta name="keywords" content="星球证书管理系统,证书管理软件,建筑资质咨询,苏州建筑资质,资质新办,资质升级,安全生产许可">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>苏州星小球信息科技有限公司 | 建筑资质咨询专家</title>
+<title>星球证书管理系统 V3.0 | 苏州星小球信息科技有限公司</title>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -24,7 +24,7 @@ nav.scrolled{background:rgba(12,26,48,0.88);backdrop-filter:blur(12px);-webkit-b
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1200px;margin:0 auto}
 .nav-logo{display:flex;align-items:center;gap:10px;font-size:1.1rem;font-weight:700;color:#f0ede8;letter-spacing:1px}
 .nav-logo .logo-icon{width:36px;height:36px;border:2px solid #c9a84c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#c9a84c;font-weight:900}
-.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{color:rgba(240,237,232,0.7);font-size:0.9rem;transition:color 0.3s;letter-spacing:0.5px}
 .nav-links a:hover{color:#c9a84c}
 .nav-toggle{display:none;background:none;border:none;color:#f0ede8;font-size:1.5rem;cursor:pointer;padding:4px}
@@ -61,6 +61,34 @@ section.dark h2+ p{color:rgba(240,237,232,0.55)}
 .about-tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 .about-tags span{background:rgba(201,168,76,0.1);color:#c9a84c;font-size:0.8rem;padding:6px 16px;border-radius:20px;border:1px solid rgba(201,168,76,0.2)}
 #services{background:#f7f5f0}
+.product-section{background:#fff}
+.product-grid{display:grid;grid-template-columns:1.08fr 0.92fr;gap:48px;align-items:center}
+.product-copy h3{font-size:1.8rem;color:#0c1a30;margin-bottom:18px}
+.product-copy p{color:#4b5563;line-height:1.9;margin-bottom:18px;font-size:0.96rem}
+.product-points{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+.product-point{border:1px solid #e8e3d7;background:#faf9f6;border-radius:4px;padding:16px}
+.product-point strong{display:block;color:#0c1a30;font-size:0.92rem;margin-bottom:6px}
+.product-point span{display:block;color:#6b7280;font-size:0.82rem;line-height:1.6}
+.software-panel{background:#0c1a30;color:#f0ede8;border-radius:4px;padding:34px;position:relative;overflow:hidden}
+.software-panel::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent,transparent 34px,rgba(201,168,76,0.05) 34px,rgba(201,168,76,0.05) 35px)}
+.software-panel>*{position:relative;z-index:1}
+.software-card-title{font-size:1.3rem;margin-bottom:16px;color:#f0ede8}
+.software-meta{display:grid;gap:12px;margin:22px 0}
+.software-meta div{display:flex;justify-content:space-between;gap:20px;padding-bottom:10px;border-bottom:1px solid rgba(240,237,232,0.08);font-size:0.88rem;color:rgba(240,237,232,0.72)}
+.software-meta span:first-child{color:rgba(240,237,232,0.42)}
+.download-btn{display:inline-flex;align-items:center;justify-content:center;background:#c9a84c;color:#0c1a30;padding:14px 28px;border-radius:2px;font-weight:700;font-size:0.92rem;letter-spacing:1px;transition:all 0.3s ease;width:100%}
+.download-btn:hover{background:#dfc06a;transform:translateY(-2px)}
+.extract-code{margin-top:12px;text-align:center;color:rgba(240,237,232,0.6);font-size:0.86rem}
+.download-note{margin-top:16px;color:rgba(240,237,232,0.45);font-size:0.78rem;line-height:1.7;text-align:center}
+#download{background:linear-gradient(135deg,#0e1d35 0%,#152648 52%,#243c5f 100%);position:relative;overflow:hidden}
+#download::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 42px,rgba(201,168,76,0.025) 42px,rgba(201,168,76,0.025) 43px)}
+.download-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.download-copy h2{text-align:left;color:#f0ede8}
+.download-copy .section-title::after{margin-left:0}
+.download-copy p{text-align:left;color:rgba(240,237,232,0.6);margin:0 0 24px;max-width:540px;line-height:1.9}
+.download-list{display:grid;gap:12px}
+.download-list li{list-style:none;color:rgba(240,237,232,0.62);font-size:0.9rem;line-height:1.7}
+.download-list li::before{content:"";display:inline-block;width:7px;height:7px;background:#c9a84c;margin-right:10px;vertical-align:middle}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .service-card{background:#fff;padding:36px 28px;border-radius:4px;transition:all 0.4s ease;border:1px solid rgba(0,0,0,0.04);position:relative;overflow:hidden}
 .service-card::before{content:"";position:absolute;top:0;left:0;width:3px;height:0;background:#c9a84c;transition:height 0.4s ease}
@@ -101,6 +129,12 @@ section.dark h2+ p{color:rgba(240,237,232,0.55)}
 .contact-info-item p{color:#6b7280;font-size:0.85rem;line-height:1.6}
 .contact-form{background:#fff;padding:36px;border-radius:4px;box-shadow:0 4px 20px rgba(0,0,0,0.04)}
 .contact-form h3{font-size:1.15rem;color:#0c1a30;margin-bottom:20px}
+.contact-form p{color:#6b7280;font-size:0.9rem;line-height:1.9;margin-bottom:18px}
+.contact-actions{display:grid;gap:12px;margin-top:24px}
+.contact-link{display:flex;align-items:center;justify-content:center;background:#0c1a30;color:#f0ede8;border-radius:4px;padding:14px 20px;font-size:0.92rem;font-weight:600;letter-spacing:1px;transition:all 0.3s ease}
+.contact-link:hover{background:#1a2d4a;transform:translateY(-2px)}
+.contact-link.secondary{background:#c9a84c;color:#0c1a30}
+.contact-link.secondary:hover{background:#dfc06a}
 .form-group{margin-bottom:16px}
 .form-group input,.form-group textarea{width:100%;padding:12px 16px;border:1px solid #e5e7eb;border-radius:4px;font-size:0.9rem;font-family:inherit;transition:border-color 0.3s}
 .form-group input:focus,.form-group textarea:focus{outline:none;border-color:#c9a84c;background:#fff}
@@ -108,7 +142,7 @@ section.dark h2+ p{color:rgba(240,237,232,0.55)}
 .form-submit{background:#0c1a30;color:#f0ede8;border:none;padding:14px 32px;font-size:0.95rem;font-weight:600;border-radius:4px;cursor:pointer;transition:all 0.3s ease;width:100%;letter-spacing:1px}
 .form-submit:hover{background:#1a2d4a}
 footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,76,0.08)}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-grid{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:32px;margin-bottom:40px}
 .footer-brand .footer-logo{display:flex;align-items:center;gap:10px;font-size:1.1rem;font-weight:700;color:#f0ede8;margin-bottom:16px}
 .footer-brand .footer-logo .logo-icon{width:32px;height:32px;border:2px solid #c9a84c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:#c9a84c;font-weight:900}
 .footer-brand p{color:rgba(240,237,232,0.4);font-size:0.85rem;line-height:1.8;max-width:320px}
@@ -133,6 +167,7 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
   h2{font-size:1.8rem}
   .hero-content h1{font-size:2.4rem}
   #about .about-grid{grid-template-columns:1fr;gap:40px}
+  .product-grid,.download-inner{grid-template-columns:1fr}
   .services-grid{grid-template-columns:repeat(2,1fr)}
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:24px}
   .adv-grid{grid-template-columns:1fr}
@@ -154,6 +189,10 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
   section{padding:64px 0}
   h2{font-size:1.5rem}
   h2+ p{font-size:0.9rem;margin-bottom:36px}
+  .product-points{grid-template-columns:1fr}
+  .software-panel{padding:26px}
+  .software-meta div{display:block}
+  .software-meta span{display:block;margin-bottom:4px}
   .services-grid{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:repeat(2,1fr);gap:16px}
   .stat-number{font-size:2rem}
@@ -172,10 +211,10 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">关于我们</a></li>
+      <li><a href="#product">软件产品</a></li>
+      <li><a href="#download">软件下载</a></li>
       <li><a href="#services">服务范围</a></li>
       <li><a href="#advantages">核心优势</a></li>
-      <li><a href="#process">服务流程</a></li>
       <li><a href="#contact">联系我们</a></li>
     </ul>
   </div>
@@ -184,12 +223,12 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
   <canvas id="hero-canvas"></canvas>
   <div class="hero-overlay"></div>
   <div class="hero-content container">
-    <div class="hero-badge">✦ 建筑资质咨询 · 苏州</div>
-    <h1>以专业之力筑就<br><span>资质</span>之基石</h1>
-    <p class="hero-sub">深耕建筑资质咨询领域<br>为企业提供资质申报到维护管理的全周期专业服务</p>
+    <div class="hero-badge">✦ 星球证书管理系统 V3.0 · 正式发布</div>
+    <h1>证书管理更清晰<br><span>资质服务</span>更高效</h1>
+    <p class="hero-sub">面向建筑资质服务机构和证书管理场景<br>提供软件工具、资质咨询与后续维护的一体化支持</p>
     <div class="hero-actions">
-      <a href="#contact" class="hero-cta">立即咨询 →</a>
-      <a href="#services" class="hero-cta-outline">了解更多</a>
+      <a href="#download" class="hero-cta">下载软件 →</a>
+      <a href="#product" class="hero-cta-outline">查看详情</a>
     </div>
   </div>
   <div class="scroll-indicator">
@@ -219,6 +258,83 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
           <div class="building-icon"></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<section id="product" class="product-section">
+  <div class="container">
+    <h2 class="section-title fade-up">星球证书管理系统 V3.0</h2>
+    <p class="fade-up fade-up-d1">为建筑资质服务团队打造的证书、人员、费用、需求一体化管理工具</p>
+    <div class="product-grid">
+      <div class="product-copy fade-up">
+        <h3>把分散表格变成可追踪的经营台账</h3>
+        <p>星球证书管理系统 V3.0 面向建筑资质服务机构、证书管理团队和企业资质负责人，覆盖证书台账、人员信息、费用利润、继续教育、客户需求和经营指标等日常管理场景。</p>
+        <p>系统支持 3 天免费试用，一次买断永久激活。客户版首次启动为空数据库，数据默认保存在当前 Windows 用户目录，并自动创建备份，方便独立、安全地交付使用。</p>
+        <div class="product-points">
+          <div class="product-point">
+            <strong>证书管理</strong>
+            <span>按姓名、编号、类别、专业、地区、社保和到期状态快速筛选。</span>
+          </div>
+          <div class="product-point">
+            <strong>人员管理</strong>
+            <span>集中维护电话、微信、职称、三类人员、社保等关键资料。</span>
+          </div>
+          <div class="product-point">
+            <strong>费用统计</strong>
+            <span>自动计算总费用、挂靠费用、利润、本月费用和月度利润。</span>
+          </div>
+          <div class="product-point">
+            <strong>需求管理</strong>
+            <span>记录客户用证需求，按专业、地区和日期筛选，并提供超期提醒。</span>
+          </div>
+          <div class="product-point">
+            <strong>到期预警</strong>
+            <span>显示证书剩余天数、过期天数，重点提醒 30 天内到期事项。</span>
+          </div>
+          <div class="product-point">
+            <strong>数据备份</strong>
+            <span>保存前和启动时自动备份，数据异常时可尝试从有效备份恢复。</span>
+          </div>
+        </div>
+      </div>
+      <div class="software-panel fade-up fade-up-d1">
+        <h3 class="software-card-title">客户版发布信息</h3>
+        <div class="software-meta">
+          <div><span>软件名称</span><span>星球证书管理系统 V3.0</span></div>
+          <div><span>当前版本</span><span>V3.0 / 3.0.0</span></div>
+          <div><span>发布日期</span><span>2026-07-20</span></div>
+          <div><span>适用系统</span><span>Windows 10 / Windows 11</span></div>
+          <div><span>授权方式</span><span>3 天免费试用，买断激活</span></div>
+          <div><span>文件大小</span><span>约 176.8 MB</span></div>
+        </div>
+        <a class="download-btn" href="https://pan.baidu.com/s/1bydbPHqEQocl-ALq0TLb7g?pwd=v7vj" target="_blank" rel="noopener">打开网盘下载</a>
+        <div class="extract-code">提取码：v7vj</div>
+        <div class="download-note">下载文件：星球证书管理系统V3.0-客户版.zip</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="download">
+  <div class="container download-inner">
+    <div class="download-copy fade-up">
+      <h2 class="section-title">软件下载</h2>
+      <p>点击按钮前往网盘下载 Windows 客户端。下载后解压压缩包，双击“星球证书管理系统V3.0.exe”即可启动软件。</p>
+      <ul class="download-list">
+        <li>首次启动自动生成空数据库，不包含开发者本地数据。</li>
+        <li>数据默认保存在当前 Windows 用户目录，便于长期使用。</li>
+        <li>软件自动保留最近 10 份每日备份，降低误操作风险。</li>
+        <li>旧版本用户支持从 V2.0 或旧包名数据目录迁移。</li>
+      </ul>
+    </div>
+    <div class="software-panel fade-up fade-up-d1">
+      <h3 class="software-card-title">星球证书管理系统V3.0-客户版.zip</h3>
+      <div class="software-meta">
+        <div><span>下载方式</span><span>百度网盘</span></div>
+        <div><span>提取码</span><span>v7vj</span></div>
+        <div><span>安装方式</span><span>解压后双击 exe 启动</span></div>
+      </div>
+      <a class="download-btn" href="https://pan.baidu.com/s/1bydbPHqEQocl-ALq0TLb7g?pwd=v7vj" target="_blank" rel="noopener">立即下载 Windows 版</a>
+      <div class="download-note">如遇下载、安装、试用或激活问题，可通过微信 jianzaoxingqiu 联系我们。</div>
     </div>
   </div>
 </section>
@@ -361,7 +477,7 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
 <section id="contact" class="light">
   <div class="container">
     <h2 class="section-title fade-up">联系我们</h2>
-    <p class="fade-up fade-up-d1">无论初次咨询还是需要资质升级，我们都在这里为您服务</p>
+    <p class="fade-up fade-up-d1">软件试用、安装激活、资质咨询与后续服务，我们都在这里为您支持</p>
     <div class="contact-grid">
       <div class="contact-info fade-up">
         <h3>联系方式</h3>
@@ -376,7 +492,7 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
           <div class="ci-icon">📞</div>
           <div>
             <h4>联系方式</h4>
-            <p>微信：jianzaoxingqiu</p>
+            <p>微信：jianzaoxingqiu<br>支持软件试用、激活与资质咨询</p>
           </div>
         </div>
         <div class="contact-info-item">
@@ -395,26 +511,13 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
         </div>
       </div>
       <div class="contact-form fade-up fade-up-d1">
-        <h3>在线留言</h3>
-        <form id="contactForm">
-          <input type="hidden" name="access_key" value="请替换成你的Web3Forms密钥">
-          <input type="hidden" name="subject" value="网站咨询 - 星小球信息科技">
-          <input type="hidden" name="from_name" value="星小球网站">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="您的姓名" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" name="phone" placeholder="联系电话" required>
-          </div>
-          <div class="form-group">
-            <input type="text" name="company" placeholder="企业名称">
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="请描述您的资质咨询需求…"></textarea>
-          </div>
-          <button type="submit" class="form-submit" id="formBtn">提交咨询 →</button>
-        </form>
-        <div id="formStatus" style="margin-top:12px;font-size:0.85rem;color:#6b7280;text-align:center"></div>
+        <h3>软件试用与激活支持</h3>
+        <p>下载后可先体验 3 天免费试用。需要安装协助、授权激活、旧版本数据迁移或企业资质咨询时，请通过微信联系我们。</p>
+        <p>联系时可备注“证书管理系统 V3.0”，我们会根据您的使用场景提供软件使用说明和后续服务支持。</p>
+        <div class="contact-actions">
+          <a class="contact-link secondary" href="https://pan.baidu.com/s/1bydbPHqEQocl-ALq0TLb7g?pwd=v7vj" target="_blank" rel="noopener">下载 Windows 客户端</a>
+          <a class="contact-link" href="#download">查看下载说明</a>
+        </div>
       </div>
     </div>
   </div>
@@ -427,7 +530,16 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
           <span class="logo-icon">星</span>
           <span>星小球信息科技</span>
         </div>
-        <p>苏州星小球信息科技有限公司，专注建筑资质咨询领域，为企业资质建设提供专业、高效、可靠的解决方案。</p>
+        <p>苏州星小球信息科技有限公司，提供星球证书管理系统 V3.0 与建筑资质咨询服务，为企业证书管理和资质建设提供专业、高效、可靠的解决方案。</p>
+      </div>
+      <div class="footer-col">
+        <h4>软件产品</h4>
+        <ul>
+          <li><a href="#product">产品介绍</a></li>
+          <li><a href="#download">软件下载</a></li>
+          <li><a href="#contact">试用激活</a></li>
+          <li><a href="#contact">安装协助</a></li>
+        </ul>
       </div>
       <div class="footer-col">
         <h4>服务项目</h4>
@@ -566,29 +678,6 @@ const counterObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 document.querySelectorAll('.stat-number[data-target]').forEach(el => counterObserver.observe(el));
-document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = document.getElementById('formBtn');
-  const status = document.getElementById('formStatus');
-  const orig = btn.textContent;
-  btn.textContent = '提交中…';
-  btn.disabled = true;
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(Object.fromEntries(new FormData(this)))
-    });
-    const data = await res.json();
-    status.textContent = data.success ? '已收到，我们会尽快联系您 ✓' : '提交失败，请稍后重试';
-    status.style.color = data.success ? '#059669' : '#dc2626';
-    if (data.success) this.reset();
-  } catch(err) {
-    status.textContent = '提交失败，请检查网络';
-    status.style.color = '#dc2626';
-  }
-  btn.textContent = orig;
-  btn.disabled = false;
-});
 </script>
 </body>
 </html>
