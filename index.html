@@ -94,13 +94,15 @@ section.dark h2+ p{color:rgba(240,237,232,0.55)}
 .changelog-header{text-align:left}
 .changelog-header .section-title::after{margin-left:0}
 .changelog-header p{text-align:left;color:#6b7280;max-width:560px;line-height:1.9;margin:0 0 22px}
-.release-panel{background:#fff;border:1px solid rgba(0,0,0,0.04);border-radius:4px;padding:30px;box-shadow:0 4px 20px rgba(0,0,0,0.04)}
+.changelog-header .download-list li{color:#4b5563}
+.release-panel{background:transparent;border:1px solid #e8e3d7;border-radius:4px;padding:30px}
 .release-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.1);color:#c9a84c;font-size:0.78rem;padding:7px 14px;border-radius:999px;margin-bottom:16px;letter-spacing:1px}
 .release-title{font-size:1.3rem;color:#0c1a30;margin-bottom:10px}
 .release-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
 .release-meta span{background:#f3efe6;color:#7a6242;font-size:0.78rem;padding:6px 10px;border-radius:999px}
 .changelog-list{display:grid;gap:12px}
-.changelog-item{background:#fff;border:1px solid rgba(0,0,0,0.04);border-radius:4px;padding:16px 18px}
+.changelog-item{background:transparent;border:0;border-bottom:1px solid #e8e3d7;border-radius:0;padding:16px 0}
+.changelog-item:last-child{border-bottom:0}
 .changelog-item strong{display:block;color:#0c1a30;font-size:0.92rem;margin-bottom:6px}
 .changelog-item span{display:block;color:#6b7280;font-size:0.84rem;line-height:1.7}
 .changelog-note{margin-top:16px;color:#6b7280;font-size:0.84rem;line-height:1.8}
@@ -498,37 +500,41 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
       <h2 class="section-title">版本更新日志</h2>
       <p>这里记录星球证书管理系统的主要版本变化，方便客户快速了解每次升级带来的功能改进和体验优化。</p>
       <div class="release-meta">
-        <span>V3.0</span>
-        <span>发布日期 2026-07-20</span>
+        <span>V3.1</span>
+        <span>发布日期 2026-07-23</span>
         <span>客户版</span>
       </div>
-      <ul class="download-list" style="color:#4b5563">
-        <li>围绕证书管理、人员管理、费用统计、继续教育、需求管理和经营指标做了系统优化。</li>
-        <li>新增需求管理，支持客户需求记录、筛选和超期提醒。</li>
-        <li>新增 3 天免费试用与提前激活机制，提升交付体验。</li>
-        <li>强化自动备份与恢复逻辑，客户版首次启动为空数据库。</li>
-        <li>优化证书筛选、多证书合并展示、到期预警、人员管理和费用统计。</li>
+      <ul class="download-list">
+        <li>修复证书类别与证书专业关联错误，规范历史数据库中的错配数据。</li>
+        <li>优化证书删除交互，降低误删同一人员其他证书的风险。</li>
+        <li>客户版使用空白初始化数据库，确保客户数据独立隔离。</li>
+        <li>保留 3 天免费试用，并支持一次性买断、终身使用。</li>
+        <li>修复版本文字乱码，更新客户版文件校验信息并重新生成发布包。</li>
       </ul>
     </div>
     <div class="release-panel fade-up fade-up-d1">
       <div class="release-badge">LATEST RELEASE</div>
-      <div class="release-title">星球证书管理系统 V3.0</div>
+      <div class="release-title">星球证书管理系统 V3.1</div>
       <div class="changelog-list">
         <div class="changelog-item">
-          <strong>需求管理</strong>
-          <span>新增左侧“需求管理”，可记录用证客户、联系方式、证书类别、专业、社保、三类人员、地区和用途等信息，并支持日期筛选与预警。</span>
+          <strong>证书类别与专业关联修复</strong>
+          <span>新增证书时，专业选项严格跟随当前证书类别；对已有本地数据库执行数据规范化，无细分专业的证书直接显示证书类别。</span>
         </div>
         <div class="changelog-item">
-          <strong>试用与授权</strong>
-          <span>支持 3 天免费试用，试用条幅显示剩余时间，可在试用期内提前激活，一次买断永久使用。</span>
+          <strong>证书删除交互优化</strong>
+          <span>无细分专业的证书默认不显示删除图标，点击操作栏“删除”按钮后才显示对应删除操作，减少误删风险。</span>
         </div>
         <div class="changelog-item">
-          <strong>数据安全</strong>
-          <span>客户版首次启动为空数据库，数据默认保存在当前 Windows 用户目录，并自动生成备份，异常时可尝试从最近备份恢复。</span>
+          <strong>客户版数据隔离</strong>
+          <span>客户版使用空白初始化数据库，不包含开发机、本地测试或个人数据，客户可独立录入人员、证书和费用信息。</span>
         </div>
         <div class="changelog-item">
-          <strong>体验优化</strong>
-          <span>优化证书、人员、费用、继续教育和经营指标模块的筛选、展示、排序与统计体验，同时修复多个白屏、错位和保存异常问题。</span>
+          <strong>激活与试用</strong>
+          <span>保留 3 天免费试用机制，试用期间可正常使用系统；试用到期后输入激活码，支持一次性买断、终身使用。</span>
+        </div>
+        <div class="changelog-item">
+          <strong>界面与发布修复</strong>
+          <span>修复左上角版本文字乱码，统一显示“星球证书管理系统 V3.1”，并更新文件校验信息、重新生成客户发布包。</span>
         </div>
       </div>
       <div class="changelog-note">如需查看完整更新记录，可联系获取更详细的版本说明。</div>
@@ -591,7 +597,7 @@ footer{background:#080e1a;padding:48px 0 24px;border-top:1px solid rgba(201,168,
           <span class="logo-icon">星</span>
           <span>星小球信息科技</span>
         </div>
-        <p>苏州星小球信息科技有限公司，提供星球证书管理系统 V3.1 与建筑资质咨询服务，为企业证书管理和资质建设提供专业、高效、可靠的解决方案。</p>
+        <p>苏州星小球信息科技有限公司，提供建筑资质咨询服务，为企业资质建设和证书管理提供专业、高效、可靠的解决方案。</p>
       </div>
       <div class="footer-col">
         <h4>软件产品</h4>
